@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+:root {
+  /* Colors */
+  --brand-light: #59B2FF;
+  --brand-mid: #3487CF;
+  --brand-dark: #1D6FB6;
+
+  --purple: #B259FF;
+  --fuschia: #FF59F9;
+  --pink: #FF598B;
+  --orange: #FF8B59;
+  --yellow: #FFCD59;
+  --lime: #E1FF59;
+  --green: #59FF91;
+  --cyan: #59FFF9;
+  --navy: #6A59FF;
+  --danger: #FF5959;
+
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+
+  /* Tipography */
+  --ff-logo: "Leckerli One", cursive;
+  --ff-heading: "Baloo 2", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+}
+
+body {  
+  font: 400 0.876em/100% var(--ff-body);
+  background-color: var(--shape-background);
+  color: var(--text-body);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {  
+  color: var(--text-heading);
+}
+
+h1 {
+  font: 400 2.5em/100% var(--ff-logo);
+}
+
+h2 {
+  font: 600 1.75em/100% var(--ff-heading);
+  margin-bottom: 2.6em;
+}
+
+h3 {
+  font: 600 1.125em/100% var(--ff-heading);
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: var(--brand-light);
+}
+
+ul[role='list'] {
+  list-style: none;
+}
+
+.sections {
+  display: grid;
+  gap: 3em;
+}
+
