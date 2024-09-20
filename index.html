@@ -85,8 +85,8 @@
         <section id="personalization">
           <h3><img src="./assets/icons/paintbrush-vertical.svg" alt="calendário" /> Personalização</h3>
 
-          <div class="flex"></div>
-            <div class="field-wrapper w-50">
+          <div class="flex">
+            <div class="field-wrapper w-30">
               <label for="theme">Estilo</label>          
               <div class="swith-wrapper">
                 <input type="checkbox" name="theme" id="theme">
@@ -98,9 +98,19 @@
               </div>
             </div>
   
-            <div class="field-wrapper w-50">
-              <label for="picture">Foto de capa</label>          
-              <input type="file" id="picture" placeholder="Selecionar" required />
+            <div class="field-wrapper w-70">
+              <label for="picture">Foto de capa</label> 
+
+              <div class="file-wrapper">
+                <button type="button" class="btn-secondary">
+                  <label for="picture">
+                    <img src="./assets/icons/upload.svg" alt="Ícone de upload" />
+                    Selecionar
+                  </label>
+                </button>
+                <input type="file" id="picture" required />
+              </div>
+
             </div>
           </div>
         </section>
