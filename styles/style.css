@@ -1,5 +1,6 @@
 @import url(global.css);
 @import url(utilities.css);
+@import url(layout.css);
 @import url(components/inputs.css);
 @import url(components/buttons.css);
 @import url(components/checkbox.css);

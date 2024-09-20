@@ -57,7 +57,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font: 400 2.5em/100% var(--ff-logo);
+  font: 400 2.5em/1.5 var(--ff-logo);
+  color: var(--pink);
 }
 
 h2 {
