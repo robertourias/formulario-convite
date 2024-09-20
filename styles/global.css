@@ -63,12 +63,19 @@ h1 {
 
 h2 {
   font: 600 1.75em/100% var(--ff-heading);
-  margin-bottom: 2.6em;
 }
 
 h3 {
+  display: flex;
+  gap: 0.75em;
+  align-items: center;
   font: 600 1.125em/100% var(--ff-heading);
   margin-bottom: 1.5em;
+
+  & > img {
+    width: 24px;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 a {

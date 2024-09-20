@@ -1,0 +1,51 @@
+.field-wrapper {
+  display: grid;
+  gap: 0.75em;
+}
+
+label {
+  display: grid;
+  gap: 0.75em;
+  color: var(--text-body);
+  font-size: .875em;
+}
+
+input, textarea {
+  appearance: none; 
+  width: 100%;
+  padding: 0.82em 1em;
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+  background-color: var(--input-base);
+  color: var(--text-body);
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--brand-light);
+  }
+
+  &:invalid {
+    border-color: var(--danger);
+  }
+
+  &:invalid+.error {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--danger);
+
+    margin-top: .5rem;
+  }
+
+  & + .error {
+    display: none;
+  }
+}
+
+textarea {
+  height: 8.5em;  
+}
