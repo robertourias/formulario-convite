@@ -84,6 +84,25 @@
   
         <section id="personalization">
           <h3><img src="./assets/icons/paintbrush-vertical.svg" alt="calendário" /> Personalização</h3>
+
+          <div class="flex"></div>
+            <div class="field-wrapper w-50">
+              <label for="theme">Estilo</label>          
+              <div class="swith-wrapper">
+                <input type="checkbox" name="theme" id="theme">
+                <label 
+                  class="toggle" 
+                  for="theme" 
+                  data-checked="Claro" 
+                  data-no-checked="Escuro"></label>
+              </div>
+            </div>
+  
+            <div class="field-wrapper w-50">
+              <label for="picture">Foto de capa</label>          
+              <input type="file" id="picture" placeholder="Selecionar" required />
+            </div>
+          </div>
         </section>
         
         <section id="contact">
