@@ -1,0 +1,45 @@
+.btn-primary {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75em;
+  padding-inline: 2em;
+  height: 48px;
+  background-color: var(--brand-dark);
+  border-radius: 8px;
+  color: var(--text-heading);
+  cursor: pointer;
+
+  img {    
+    height: 20px;
+    aspect-ratio: 1 / 1;
+  }
+
+  &:hover {
+    background-color: var(--brand-mid);
+  }
+}
+
+.btn-secondary {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75em;
+  padding-inline: 1.5em;
+  height: 40px;
+  background-color: var(--shape-button);
+  border-radius: 8px;
+  color: var(--text-heading);
+  cursor: pointer;
+
+  img {    
+    height: 20px;
+    aspect-ratio: 1 / 1;
+  }
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+}
