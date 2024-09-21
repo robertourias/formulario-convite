@@ -1,0 +1,37 @@
+.color-selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+
+  & input[type=radio] {
+    all: unset;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: 5px solid var(--shape-button);
+    padding: 5px;
+    outline: 2px solid transparent;
+    border-radius: 999px;
+    cursor: pointer;
+    position: relative;
+
+    &:checked {
+      outline-color: var(--brand-light);
+    }
+
+    &.bg-purple { background-color: var(--purple); }
+    &.bg-fuschia { background-color: var(--fuschia); }
+    &.bg-pink { background-color: var(--pink); }
+    &.bg-orange { background-color: var(--orange); }
+    &.bg-yellow { background-color: var(--yellow); }
+    &.bg-lime { background-color: var(--lime); }
+    &.bg-green { background-color: var(--green); }
+    &.bg-cyan { background-color: var(--cyan); }
+    &.bg-navy { background-color: var(--navy); }
+    &.bg-danger { background-color: var(--danger); }
+    &.bg-brand-light { background-color: var(--brand-light); }
+    &.bg-brand-mid { background-color: var(--brand-mid); }
+    &.bg-brand-dark { background-color: var(--brand-dark); }
+  }
+}

@@ -10,7 +10,7 @@ label {
   font-size: .875em;
 }
 
-input:not([type=checkbox]):not([type=file]), 
+input:not([type=checkbox]):not([type=file]):not([type=radio]), 
 textarea {
   appearance: none; 
   width: 100%;
