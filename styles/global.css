@@ -91,3 +91,6 @@ ul[role='list'] {
   gap: 3em;
 }
 
+[data-lastpass-icon-root] {
+  display: none;
+}

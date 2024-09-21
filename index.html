@@ -27,7 +27,7 @@
 
           <div class="field-wrapper">
             <label for="title">Título</label>          
-            <input type="text" id="title" placeholder="Nome do evento" required />
+            <input type="text" id="title" name="title" placeholder="Nome do evento" required />
             <div class="error">
               <img src="./assets/icons/circle-alert.svg" alt="Erro">
               Campo obrigatório
@@ -38,34 +38,37 @@
             <div class="field-wrapper w-50">
               <label for="start">Início</label>          
               <input type="datetime" id="start" placeholder="DD/MM/AAAA, --:--" required />
-              <div class="error">
-                <img src="./assets/icons/circle-alert.svg" alt="Erro">
-                Campo obrigatório
-              </div>
             </div>
   
             <div class="field-wrapper w-50">
               <label for="end">Fim</label>          
               <input type="datetime" id="end" placeholder="DD/MM/AAAA, --:--" required />
-              <div class="error">
-                <img src="./assets/icons/circle-alert.svg" alt="Erro">
-                Campo obrigatório
-              </div>
             </div>
           </div>
   
           <div class="flex">
             <div class="field-wrapper">
-              <label for="start">Tipo</label>              
+              <label>Tipo</label> 
+              <div class="segmented-control">
+                <input type="radio" id="presencial" name="type" value="Presencial" checked />
+                <label for="presencial">
+                  <img src="./assets/icons/building-2.svg" alt="Prédio" />
+                  <img src="./assets/icons/building-2-active.svg" alt="Prédio" />
+                  Presencial
+                </label>
+
+                <input type="radio" id="online" name="type" value="Online" checked />
+                <label for="online">
+                  <img src="./assets/icons/video.svg" alt="Camera" />
+                  <img src="./assets/icons/video-active.svg" alt="Camera" />
+                  Online
+                </label>
+              </div>             
             </div>
   
             <div class="field-wrapper">
               <label for="end">Local</label>          
-              <input type="text" id="end" placeholder="Link ou endereço" required />
-              <div class="error">
-                <img src="./assets/icons/circle-alert.svg" alt="Erro">
-                Campo obrigatório
-              </div>
+              <input type="text" id="end" placeholder="Link ou endereço" required />              
             </div>
           </div>
   

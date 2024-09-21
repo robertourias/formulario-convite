@@ -33,16 +33,14 @@ textarea {
     border-color: var(--danger);
   }
 
-  &:invalid+.error {
+  &:invalid+.error, &:invalid + div + .error {
     display: flex;
     align-items: center;
     gap: .5rem;
     color: var(--danger);
-
-    margin-top: .5rem;
   }
 
-  & + .error {
+  & + .error, & + div + .error {
     display: none;
   }
 }
