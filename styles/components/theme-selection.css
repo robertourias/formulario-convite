@@ -1,0 +1,48 @@
+.theme-selection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  
+
+  & label {
+
+  }
+
+  & .card {
+    width: 130px;
+    height: 103px;
+    background-color: var(--input-stroke);
+    border: 2px solid var(--input-stroke);
+    padding: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+
+    & img {
+      width: 100%;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    & p {
+      text-align: center;
+      color: var(--text-heading);
+      line-height: 2.75em;
+    }
+  }
+
+  & input[type=radio] {
+    display: none;
+    position: relative;
+
+    &:checked {
+      & + .card {
+        border-color: var(--brand-light);
+      }
+    }
+  }
+}
