@@ -9,7 +9,6 @@
   }
 
   & .card {
-    width: 130px;
     height: 103px;
     background-color: var(--input-stroke);
     border: 2px solid var(--input-stroke);

@@ -70,7 +70,7 @@ h3 {
   gap: 0.75em;
   align-items: center;
   font: 600 1.125em/100% var(--ff-heading);
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 
   & > img {
     width: 24px;
